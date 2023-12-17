@@ -1,0 +1,375 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Lato:wght@300&family=Merriweather:ital@0;1&family=Oswald:wght@200;300;400;500;600;700&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap');
+
+/*Asterisk wildcard selector to override default styles added by the browser*/
+* {padding: 0; 
+    margin: 0; 
+    box-sizing:border-box;
+}
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family:'EB Garamond', serif;
+}
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 2px;
+  color:black;
+  font-size: 35px;
+  width: 90%;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  color:#000000;
+  font-size: 25px;
+}
+
+h3 {
+  color:white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h5 {
+  font-family: 'EB Garamond', serif;
+  color: white;
+  font-weight: 40%;
+}
+
+
+/* Header */
+/* Header background*/
+header {
+  background-color:black;
+  position: relative;
+  max-height: 20vh;
+}
+.celticknot {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+/* Style the navigation menue with icons from W3 school*/
+.navbar {
+  width: auto;
+  overflow: auto;
+  position: absolute;
+  bottom: 0%;
+  right:0%;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #569dee65;
+}
+
+
+/*main content*/
+main 
+{/* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 0px;
+    background-color:lightblue;
+     /* Enable flex properties for child elements */
+     display: flex;
+     flex-direction: column;
+}
+/* Clinical Development Introduction section*/
+#Home {
+  width: 100%;
+  background: url("../../assets/images/MedSci-614.png") no-repeat center center/cover;
+}
+ h1{
+  width: 90%;
+  text-align:center;
+  }
+
+h2 {
+  width: 90%;
+  font-weight: bold;
+  text-align:center;
+}
+
+.introduction {
+  width: 80%;
+  background-color: rgba(230, 244, 254, 0.6);
+  padding: 10px 10px; 
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+/* Services section  according to Dev.to*/
+#Services {
+    background-color: rgb(150, 193, 242);
+    width: 100%;
+  }
+.container-list {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width: 100%;
+  
+}
+
+.development-left {
+  font-size: 20px;
+  flex: 1;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+ 
+  }
+
+.clinical-right {
+  font-size: 20px;
+  flex: 1;
+  margin-top:50px;
+  margin-bottom: 20px;
+ 
+}
+
+/* Expertise section from W3 school for side by side table */
+/* adpatation form Yannis*/
+#Expertise {
+  background-color: rgb(0, 0, 0);
+  display:flex;
+}
+.Elisabeth {
+ margin-left: 30%;
+ margin-top: 5%;
+}
+
+.expertisetitle h2 {
+  color:#04948aed;
+  text-align: center;
+
+}
+.rolestitle h2 {
+  color:#04948aed;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+}
+
+.educationtitle h2 {
+  color:#04948aed;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+
+.left-block {
+  background-color: black;
+  width: 50%;
+  min-height: 200px;
+  padding: 0px 20px 0px 20px;
+}
+.right-block {
+  background-color: black;
+  width: 50%;
+  padding: 0px 20px 0px 20px;
+}
+
+/*expertise text part arranged in divs to give them extra space */
+/* now new form Yannis* with deletions of the old*/
+.expertise {
+  color: whitesmoke;
+}
+.over20years {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.translational {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.protocol {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.PV {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*  table design form Yannis tables*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 5px 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+/* my attempt to push the edication table to the bottom*/
+/* all stays afeyr Yannis changes only relative got deleted form education table */
+table.education {
+  table-layout:auto;
+  width:100%;
+  margin-bottom: 10%;
+  height: 20px;
+}
+table.education td {
+  min-width: 100px;
+}
+table.roles {
+  table-layout:auto;
+  width:100%;
+  margin-top: 10%;
+}
+table.roles td {
+  min-width: 100px;
+  min-height: 200px;
+  text-size: 70px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* contact form section form CI tutorial */
+#contact {
+  background-color: lightblue;
+  background-size: cover;
+  background-position: 75%;
+  padding: 20px 10% 0 10%;
+}
+/* formate the container of the form -Add a background color and some padding around the form */
+.outer-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display:flex;
+}
+.side-by-side-email {
+  color:darkblue;
+ flex:1;
+ min-width: 150px;
+ margin-left: 10px;
+}
+
+.side-by-side-mobile {
+ color:darkblue;
+ flex:1;
+ min-width: 150px;
+ margin-left: 10px;
+}
+.form-container {
+  flex:1;
+  min-width: 300px;
+}
+
+ /*added the contact form from We3 schools */
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #048caa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #048caa;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display:flex;
+}
+
+
+
+
+/* Add responsiveness for Home page with smaller letters for screens less than 920 pixels */
+@media screen and (max-width: 920px) {
+ .title h1 {
+  font-size:
+ }
+}
+
+
+/* Add responsiveness  for navbar form W3school- will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+.navbar a {
+  float: none;
+  display: block;
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-right: 10px;}
+  
+  header { 
+  min-height: 120px;}
+}
+/* Responsive layout - makes the two table columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+@media screen and (max-width: 600px) {
+  .left-block, .right-block {
+    width: 100%;
+  }
+  #Expertise {
+    display: block;}
+}
+
+/* Footer */
+footer {background-color:#000000}
+#Impressum {
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#Impressum i {
+  font-size: 160%;
+  padding: 5%;
+  color:white;
+}
+.impressumh5 {
+  text-color: rgb(159, 157, 157);
+  font-weight: 100;
+}
